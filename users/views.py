@@ -1,15 +1,24 @@
-from django.db import IntegrityError
+from django import http
 from django.shortcuts import render
 from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework.authentication import authenticate, TokenAuthentication
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
+from rest_framework.authtoken.models import Token
+from rest_framework.decorators import authentication_classes, permission_classes
+from .permissions import IsAdmin
 
 from users.models import User
 from users.serializers import UserSerializer
 
 # Create your views here.
 
-class UserView(APIView):
+class UserView(APIView): 
+
+  authentication_classes = [TokenAuthentication]
+    # permission_classes = [IsAdminUser]
+  permission_classes = [IsAdmin]
 
   def post(self, request):
 
@@ -22,9 +31,6 @@ class UserView(APIView):
 
     except KeyError:
       return status.HTTP_400_BAD_REQUEST
-
-    except IntegrityError:
-      return IntegrityError('user email is not unique')
 
     if User.objects.filter(email=email).exists() == True:
       response = {"message": "User already exists"}
@@ -42,13 +48,34 @@ class UserView(APIView):
 
     return Response(serialized.data, status=status.HTTP_201_CREATED)
 
+
   def get(self, request):
+    # authentication_classes = [TokenAuthentication]
+    # # permission_classes = [IsAdminUser]
+    # permission_classes = [IsAdmin]
+
     users = User.objects.all()
 
     serialized = UserSerializer(users, many=True)
 
     return Response(serialized.data, status=status.HTTP_200_OK)
 
+
+class UserLoginView(APIView):
+  def post(self, request):
+    try:
+      email = request.data['email']
+      password = request.data['password']
+    except KeyError:
+      return status.HTTP_400_BAD_REQUEST
+
+    user = authenticate(email=email, password=password)
+
+    if user:
+      token = Token.objects.get_or_create(user=user)[0]
+      return Response({'token': token.key})
+    if not user:
+      return Response(status=status.HTTP_401_UNAUTHORIZED)
 
 
 
