@@ -10,15 +10,29 @@ from rest_framework.decorators import authentication_classes, permission_classes
 from .permissions import IsAdmin
 
 from users.models import User
-from users.serializers import UserSerializer
+from users.serializers import UserSerializer, LoginSerializer
 
 # Create your views here.
 
 class UserView(APIView): 
 
   authentication_classes = [TokenAuthentication]
-    # permission_classes = [IsAdminUser]
   permission_classes = [IsAdmin]
+
+# inicio testes
+  # def post(self, request):
+  #   serializer = UserSerializer(data=request.data)
+  #   print("==================")
+  #   print(serializer)
+  #   print("======fim serializer=========")
+
+  #   if serializer.is_valid():
+  #     serializer.save()
+  #     return Response(serializer.validated_data, status=status.HTTP_201_CREATED)
+
+  #   return Response({'message':'Invalid data.'}, status=status.HTTP_400_BAD_REQUEST)
+
+# fim testes
 
   def post(self, request):
 
@@ -50,9 +64,6 @@ class UserView(APIView):
 
 
   def get(self, request):
-    # authentication_classes = [TokenAuthentication]
-    # # permission_classes = [IsAdminUser]
-    # permission_classes = [IsAdmin]
 
     users = User.objects.all()
 

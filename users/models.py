@@ -44,6 +44,9 @@ class User(AbstractUser):
   email = models.EmailField(max_length=255, unique=True)
   is_admin = models.BooleanField()
   username = models.CharField(unique=False, null=True, max_length=255)
+
+  # address = models.ForeignKey("Address", on_delete=models.CASCADE, related_name='users')
+  # course = models.OneToOneField('courses.Course', on_delete=models.CASCADE, null=True)
   
   USERNAME_FIELD = 'email'
   REQUIRED_FIELDS = ['is_admin', 'first_name', 'last_name']
