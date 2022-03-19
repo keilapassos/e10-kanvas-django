@@ -4,7 +4,7 @@ from courses.models import Course
 # from courses.serializers import CourseSerializer
 
 class UserSerializer(serializers.Serializer):
-  uuid = serializers.UUIDField(format='hex_verbose')
+  uuid = serializers.UUIDField(format='hex_verbose', read_only=True)
   first_name = serializers.CharField()
   last_name = serializers.CharField()
   email = serializers.CharField()
@@ -17,5 +17,5 @@ class UserSerializer(serializers.Serializer):
 
 
 class LoginSerializer(serializers.Serializer):
-  username = serializers.CharField()
+  email = serializers.EmailField()
   password = serializers.CharField()    
