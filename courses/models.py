@@ -10,7 +10,7 @@ class Course(models.Model):
   created_at = models.DateTimeField()
   link_repo = models.TextField()
 
-  # instructor = models.OneToOneField('users.User', on_delete=models.CASCADE, null=True)
-  # instructor = models.CharField(null=True, max_length=255)
-  # students = models.ManyToManyField('users.User', related_name='courses')
+  instructor = models.OneToOneField('users.User', on_delete=models.CASCADE, related_name='course', null=True)
+  students = models.ManyToManyField('users.User', related_name='courses')
+
   
