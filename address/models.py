@@ -12,5 +12,3 @@ class Address(models.Model):
   state = models.CharField(max_length=255)
   zip_code = models.CharField(max_length=25)
   country = models.CharField(max_length=150)
-
-  user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="address")

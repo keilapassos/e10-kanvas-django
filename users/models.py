@@ -4,6 +4,7 @@ import uuid
 
 from django.utils import timezone
 from django.contrib.auth.models import BaseUserManager
+# from address.models import Address
 
 class CustomUserManager(BaseUserManager):
 
@@ -45,7 +46,7 @@ class User(AbstractUser):
   is_admin = models.BooleanField()
   username = models.CharField(unique=False, null=True, max_length=255)
 
-  # address = models.ForeignKey("Address", on_delete=models.CASCADE, related_name='users')
+  user_address = models.ForeignKey("address.Address", on_delete=models.CASCADE, related_name='users', null=True)
   # course = models.OneToOneField('courses.Course', on_delete=models.CASCADE, null=True)
   
   USERNAME_FIELD = 'email'
