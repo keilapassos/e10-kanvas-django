@@ -19,3 +19,10 @@ class CoursesByIdPermission(BasePermission) :
         
     if request.method == 'GET' :
       return True 
+
+class CoursesRegistrationPermission(BasePermission) :
+  
+  def has_permission(self, request, view) :
+    if request.method == 'PUT': 
+      if request.user.is_authenticated and request.user.is_admin ==  True:
+        return True

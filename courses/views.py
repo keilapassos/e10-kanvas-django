@@ -1,4 +1,5 @@
 from datetime import datetime
+from django.db import IntegrityError
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -6,8 +7,9 @@ from rest_framework import status
 from .models import Course
 from .serializers import CourseSerializer
 from rest_framework.authentication import authenticate, TokenAuthentication
-from courses.permissions import CoursePermission, CoursesByIdPermission
+from courses.permissions import CoursePermission, CoursesByIdPermission, CoursesRegistrationPermission
 
+from users.models import User
 
 # Create your views here.
 
@@ -104,3 +106,46 @@ class CourseByIdView(APIView):
     except Course.DoesNotExist:
       return Response({"message": "Course does not exist"}, status=status.HTTP_404_NOT_FOUND)
 
+class InstructorView(APIView):
+  authentication_classes = [TokenAuthentication]
+  permission_classes = [CoursesRegistrationPermission]
+
+  def put(self, request, course_id=''):
+    try:     
+      course = Course.objects.get(uuid=course_id)
+
+      instructor = User.objects.get(uuid=request.data['instructor_id'])
+
+      course.instructor = instructor
+
+    except User.DoesNotExist:
+      return Response({"message": "Invalid instructor_id"}, status=status.HTTP_404_NOT_FOUND)
+    
+    except Course.DoesNotExist:
+      return Response({"message": "Course does not exist"}, status=status.HTTP_404_NOT_FOUND)
+    
+    except KeyError:
+      # no canvas aparece a key 'message', mas o teste falha se colocar, deixei como no teste
+      # return Response({"message": "instructor_id is a required field."}, status=status.HTTP_400_BAD_REQUEST)
+      return Response("instructor_id is a required field.", status=status.HTTP_400_BAD_REQUEST)
+
+    # except IntegrityError:
+    #   return Response({'message': 'Instructor already registered in a course'}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+    if instructor.is_admin == False:
+      return Response({'message': 'Instructor id does not belong to an admin'}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+    print("==============")
+    print(course.instructor)
+
+    course.save()
+
+    print("===22222======")
+    print(course.instructor)
+
+    # if course.instructor in course:
+    #   return Response({'message': 'Instructor already registered'}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+    serializer = CourseSerializer(course)
+
+    return Response(serializer.data)

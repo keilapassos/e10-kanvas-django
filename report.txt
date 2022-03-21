@@ -50,94 +50,102 @@ test_wrong_data_user_creation_400 (test_api.TestAccountsRoutesWithoutAuthenticat
 test_address_creation_200 (test_api.TestAddress) ... ok
 test_address_creation_already_exists_200 (test_api.TestAddress) ... ok
 test_address_creation_wrong_data_400 (test_api.TestAddress) ... ok
-test_delete_course_by_instructor_204 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:12.209916) while time zone support is active.
+test_delete_course_by_instructor_204 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:05.885428) while time zone support is active.
   warnings.warn(
 ok
-test_delete_course_by_no_user_401 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:12.977718) while time zone support is active.
+test_delete_course_by_no_user_401 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:06.658411) while time zone support is active.
   warnings.warn(
 ok
-test_delete_course_by_student_403 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:13.569804) while time zone support is active.
+test_delete_course_by_student_403 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:07.241912) while time zone support is active.
   warnings.warn(
 ok
-test_delete_course_with_invalid_course_id_404 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:14.341330) while time zone support is active.
+test_delete_course_with_invalid_course_id_404 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:08.033444) while time zone support is active.
   warnings.warn(
 ok
-test_course_creation_by_instructor_201 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:15.110266) while time zone support is active.
+test_course_creation_by_instructor_201 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:08.841901) while time zone support is active.
   warnings.warn(
 ok
 test_course_creation_by_no_user_401 (test_api.TestCoursesCreation) ... ok
 test_course_creation_by_student_403 (test_api.TestCoursesCreation) ... ok
-test_course_creation_duplicate_name_422 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:16.660518) while time zone support is active.
+test_course_creation_duplicate_name_422 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:10.441791) while time zone support is active.
   warnings.warn(
 ok
 test_course_creation_wrong_data_400 (test_api.TestCoursesCreation) ... ok
-test_list_courses_200 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:17.824099) while time zone support is active.
+test_list_courses_200 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:11.691353) while time zone support is active.
   warnings.warn(
 ok
 test_retrieve_invalid_course_404 (test_api.TestCoursesCreation) ... ok
-test_retrieve_valid_course_200 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:18.799479) while time zone support is active.
+test_retrieve_valid_course_200 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:12.748495) while time zone support is active.
   warnings.warn(
 ok
-test_register_instructor_course_by_instructor_200 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:19.562577) while time zone support is active.
+test_register_instructor_course_by_instructor_200 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:13.533785) while time zone support is active.
+  warnings.warn(
+/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:13.733393) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_instructor_course_by_no_user_401 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:20.510807) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_instructor_course_by_student_403 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:21.274210) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_instructor_course_with_invalid_id_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:22.221419) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_instructor_course_with_student_id_422 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:23.182192) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_instructor_course_with_wrong_field_400 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:24.175484) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_instructor_course_wrong_courseId_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:25.132923) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_students_course_by_intructor_200 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:26.099895) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_students_course_by_no_user_401 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:27.115233) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_students_course_by_student_403 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:27.882879) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_students_course_invalid_course_id_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:28.833717) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_students_course_with_instructor_id_422 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:29.782663) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_students_course_with_invalid_student_id_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:30.735484) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_students_course_with_wrong_field_400 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:31.691676) while time zone support is active.
-  warnings.warn(
-ERROR
-test_register_students_course_with_wrong_field_type_400 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:32.636456) while time zone support is active.
-  warnings.warn(
-ERROR
-test_update_course_by_instructor_200 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:33.223389) while time zone support is active.
+==============
+instructor@kenzie.com.br
+===22222======
+instructor@kenzie.com.br
+==============
+instructor@kenzie.com.br
+test_register_instructor_course_by_no_user_401 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:14.560884) while time zone support is active.
   warnings.warn(
 ok
-test_update_course_by_no_user_401 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:33.993661) while time zone support is active.
+test_register_instructor_course_by_student_403 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:15.326515) while time zone support is active.
   warnings.warn(
 ok
-test_update_course_by_student_403 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:34.584854) while time zone support is active.
+test_register_instructor_course_with_invalid_id_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:16.282377) while time zone support is active.
   warnings.warn(
 ok
-test_update_course_with_conflict_422 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:35.361566) while time zone support is active.
-  warnings.warn(
-/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:35.732619) while time zone support is active.
+test_register_instructor_course_with_student_id_422 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:17.254032) while time zone support is active.
   warnings.warn(
 ok
-test_update_invalid_course_404 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:36.166792) while time zone support is active.
+test_register_instructor_course_with_wrong_field_400 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:18.215902) while time zone support is active.
+  warnings.warn(
+ok
+test_register_instructor_course_wrong_courseId_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:19.193831) while time zone support is active.
+  warnings.warn(
+ok
+test_register_students_course_by_intructor_200 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:20.139284) while time zone support is active.
+  warnings.warn(
+ERROR
+test_register_students_course_by_no_user_401 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:21.085598) while time zone support is active.
+  warnings.warn(
+ERROR
+test_register_students_course_by_student_403 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:21.872304) while time zone support is active.
+  warnings.warn(
+ERROR
+test_register_students_course_invalid_course_id_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:22.838161) while time zone support is active.
+  warnings.warn(
+ERROR
+test_register_students_course_with_instructor_id_422 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:23.792059) while time zone support is active.
+  warnings.warn(
+ERROR
+test_register_students_course_with_invalid_student_id_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:24.737742) while time zone support is active.
+  warnings.warn(
+ERROR
+test_register_students_course_with_wrong_field_400 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:25.745198) while time zone support is active.
+  warnings.warn(
+ERROR
+test_register_students_course_with_wrong_field_type_400 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:26.733286) while time zone support is active.
+  warnings.warn(
+ERROR
+test_update_course_by_instructor_200 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:27.331681) while time zone support is active.
+  warnings.warn(
+ok
+test_update_course_by_no_user_401 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:28.135326) while time zone support is active.
+  warnings.warn(
+ok
+test_update_course_by_student_403 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:28.779915) while time zone support is active.
+  warnings.warn(
+ok
+test_update_course_with_conflict_422 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:29.579081) while time zone support is active.
+  warnings.warn(
+/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:29.949220) while time zone support is active.
+  warnings.warn(
+ok
+test_update_invalid_course_404 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:56:30.348915) while time zone support is active.
   warnings.warn(
 ok
 
@@ -145,71 +153,78 @@ ok
 ERROR: test_register_instructor_course_by_instructor_200 (test_api.TestCoursesRegister)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/test_api.py", line 630, in test_register_instructor_course_by_instructor_200
-    output = response.json()
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/test/client.py", line 748, in _parse_json
-    raise ValueError(
-ValueError: Content-Type header is "text/html", not "application/json"
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: courses_course.instructor_id
 
-======================================================================
-ERROR: test_register_instructor_course_by_no_user_401 (test_api.TestCoursesRegister)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/test_api.py", line 707, in test_register_instructor_course_by_no_user_401
-    output = response.json()
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/test/client.py", line 748, in _parse_json
-    raise ValueError(
-ValueError: Content-Type header is "text/html", not "application/json"
+The above exception was the direct cause of the following exception:
 
-======================================================================
-ERROR: test_register_instructor_course_by_student_403 (test_api.TestCoursesRegister)
-----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/test_api.py", line 687, in test_register_instructor_course_by_student_403
-    output = response.json()
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/test/client.py", line 748, in _parse_json
-    raise ValueError(
-ValueError: Content-Type header is "text/html", not "application/json"
-
-======================================================================
-ERROR: test_register_instructor_course_with_invalid_id_404 (test_api.TestCoursesRegister)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/test_api.py", line 776, in test_register_instructor_course_with_invalid_id_404
-    output = response.json()
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/test/client.py", line 748, in _parse_json
-    raise ValueError(
-ValueError: Content-Type header is "text/html", not "application/json"
-
-======================================================================
-ERROR: test_register_instructor_course_with_student_id_422 (test_api.TestCoursesRegister)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/test_api.py", line 751, in test_register_instructor_course_with_student_id_422
-    output = response.json()
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/test/client.py", line 748, in _parse_json
-    raise ValueError(
-ValueError: Content-Type header is "text/html", not "application/json"
-
-======================================================================
-ERROR: test_register_instructor_course_with_wrong_field_400 (test_api.TestCoursesRegister)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/test_api.py", line 801, in test_register_instructor_course_with_wrong_field_400
-    output = response.json()
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/test/client.py", line 748, in _parse_json
-    raise ValueError(
-ValueError: Content-Type header is "text/html", not "application/json"
-
-======================================================================
-ERROR: test_register_instructor_course_wrong_courseId_404 (test_api.TestCoursesRegister)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/test_api.py", line 731, in test_register_instructor_course_wrong_courseId_404
-    output = response.json()
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/test/client.py", line 748, in _parse_json
-    raise ValueError(
-ValueError: Content-Type header is "text/html", not "application/json"
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/test_api.py", line 646, in test_register_instructor_course_by_instructor_200
+    response = self.client.put(f"/api/courses/{course_id_2}/registrations/instructor/", body, format="json")
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/rest_framework/test.py", line 304, in put
+    response = super().put(
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/rest_framework/test.py", line 214, in put
+    return self.generic('PUT', path, data, content_type, **extra)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/rest_framework/test.py", line 234, in generic
+    return super().generic(
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/test/client.py", line 541, in generic
+    return self.request(**r)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/rest_framework/test.py", line 286, in request
+    return super().request(**kwargs)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/rest_framework/test.py", line 238, in request
+    request = super().request(**kwargs)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/test/client.py", line 810, in request
+    self.check_exception(response)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/test/client.py", line 663, in check_exception
+    raise exc_value
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/courses/views.py", line 141, in put
+    course.save()
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/base.py", line 970, in _save_table
+    updated = self._do_update(
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/base.py", line 1034, in _do_update
+    return filtered._update(values) > 0
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/query.py", line 885, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1783, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: courses_course.instructor_id
 
 ======================================================================
 ERROR: test_register_students_course_by_intructor_200 (test_api.TestCoursesRegister)
@@ -292,7 +307,7 @@ Traceback (most recent call last):
 ValueError: Content-Type header is "text/html", not "application/json"
 
 ----------------------------------------------------------------------
-Ran 45 tests in 32.292s
+Ran 45 tests in 33.215s
 
-FAILED (errors=15)
+FAILED (errors=9)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
