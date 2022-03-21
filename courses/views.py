@@ -1,4 +1,5 @@
 from datetime import datetime
+from xml.dom import ValidationErr
 from django.db import IntegrityError
 from django.shortcuts import render
 from rest_framework.views import APIView
@@ -135,17 +136,57 @@ class InstructorView(APIView):
     if instructor.is_admin == False:
       return Response({'message': 'Instructor id does not belong to an admin'}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
+    # integrity error no teste, verificar depois
     print("==============")
-    print(course.instructor)
+    print(course.instructor) 
 
     course.save()
 
-    print("===22222======")
-    print(course.instructor)
-
-    # if course.instructor in course:
-    #   return Response({'message': 'Instructor already registered'}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
-
     serializer = CourseSerializer(course)
+
+    return Response(serializer.data)
+
+class StudentView(APIView):
+  authentication_classes = [TokenAuthentication]
+  permission_classes = [CoursesRegistrationPermission]
+
+  def put(self, request, course_id=''):
+    try:     
+      course = Course.objects.get(uuid=course_id)
+
+      # course.students = []
+      course.students.set([])
+
+      # print("============")
+      # print(type(request.data['students_id']) = list)
+      
+      # if type(request.data['students_id']) != list:
+      #   return Response({"error": "Users ids list were not provided"}, status=status.HTTP_400_BAD_REQUEST)
+
+      for person in request.data['students_id']:
+        student_exists = User.objects.get(uuid=person)
+        if student_exists.is_admin == True:
+          return Response({'message': 'Some student id belongs to an Instructor'}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+        # course.students.append(student_exists)
+        # course.students.append({student_exists})
+        course.students.add(student_exists)
+
+    # except ValidationErr:
+    #   return Response({"error": "Users ids list were not provided"}, status=status.HTTP_400_BAD_REQUEST)
+
+    except User.DoesNotExist:
+      return Response({"message": "Invalid students_id list"}, status=status.HTTP_404_NOT_FOUND)
+    
+    except Course.DoesNotExist:
+      return Response({"message": "Course does not exist"}, status=status.HTTP_404_NOT_FOUND)
+    
+    except KeyError:
+      return Response({"error": "Users ids list were not provided"}, status=status.HTTP_400_BAD_REQUEST)
+    
+    
+
+    course.save()
+
+    serializer = CourseSerializer(course)    
 
     return Response(serializer.data)
