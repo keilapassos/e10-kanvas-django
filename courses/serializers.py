@@ -11,3 +11,9 @@ class CourseSerializer(serializers.Serializer):
     
   instructor = UserSerializer(read_only=True)
   students = UserSerializer(many=True, read_only=True)
+
+class StudentSerializer(serializers.Serializer):
+  students_id = serializers.ListField()
+
+class InstructorSerializer(serializers.Serializer):
+  instructor_id = serializers.CharField()
