@@ -4,7 +4,7 @@ from users.serializers import UserSerializer
 class AddressSerializer(serializers.Serializer):
   uuid = serializers.UUIDField(format='hex_verbose', read_only=True)
   street = serializers.CharField()
-  # house_number = serializers.IntegerField()
+  house_number = serializers.IntegerField()
   city = serializers.CharField()
   state = serializers.CharField()
   zip_code = serializers.CharField()

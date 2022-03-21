@@ -47,97 +47,97 @@ test_login_with_invalid_credentials_401 (test_api.TestAccountsRoutesWithoutAuthe
 test_login_with_wrong_fields_400 (test_api.TestAccountsRoutesWithoutAuthentication) ... ok
 test_student_user_creation_201 (test_api.TestAccountsRoutesWithoutAuthentication) ... ok
 test_wrong_data_user_creation_400 (test_api.TestAccountsRoutesWithoutAuthentication) ... ok
-test_address_creation_200 (test_api.TestAddress) ... FAIL
+test_address_creation_200 (test_api.TestAddress) ... ok
 test_address_creation_already_exists_200 (test_api.TestAddress) ... ok
-test_address_creation_wrong_data_400 (test_api.TestAddress) ... FAIL
-test_delete_course_by_instructor_204 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:01.031350) while time zone support is active.
+test_address_creation_wrong_data_400 (test_api.TestAddress) ... ok
+test_delete_course_by_instructor_204 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:12.209916) while time zone support is active.
   warnings.warn(
 ok
-test_delete_course_by_no_user_401 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:01.797525) while time zone support is active.
+test_delete_course_by_no_user_401 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:12.977718) while time zone support is active.
   warnings.warn(
 ok
-test_delete_course_by_student_403 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:02.400725) while time zone support is active.
+test_delete_course_by_student_403 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:13.569804) while time zone support is active.
   warnings.warn(
 ok
-test_delete_course_with_invalid_course_id_404 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:03.166932) while time zone support is active.
+test_delete_course_with_invalid_course_id_404 (test_api.TestCourseDelete) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:14.341330) while time zone support is active.
   warnings.warn(
 ok
-test_course_creation_by_instructor_201 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:03.929609) while time zone support is active.
+test_course_creation_by_instructor_201 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:15.110266) while time zone support is active.
   warnings.warn(
 ok
 test_course_creation_by_no_user_401 (test_api.TestCoursesCreation) ... ok
 test_course_creation_by_student_403 (test_api.TestCoursesCreation) ... ok
-test_course_creation_duplicate_name_422 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:05.475085) while time zone support is active.
+test_course_creation_duplicate_name_422 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:16.660518) while time zone support is active.
   warnings.warn(
 ok
 test_course_creation_wrong_data_400 (test_api.TestCoursesCreation) ... ok
-test_list_courses_200 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:06.635376) while time zone support is active.
+test_list_courses_200 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:17.824099) while time zone support is active.
   warnings.warn(
 ok
 test_retrieve_invalid_course_404 (test_api.TestCoursesCreation) ... ok
-test_retrieve_valid_course_200 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:07.606130) while time zone support is active.
+test_retrieve_valid_course_200 (test_api.TestCoursesCreation) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:18.799479) while time zone support is active.
   warnings.warn(
 ok
-test_register_instructor_course_by_instructor_200 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:08.367014) while time zone support is active.
+test_register_instructor_course_by_instructor_200 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:19.562577) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_instructor_course_by_no_user_401 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:09.310656) while time zone support is active.
+test_register_instructor_course_by_no_user_401 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:20.510807) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_instructor_course_by_student_403 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:10.083809) while time zone support is active.
+test_register_instructor_course_by_student_403 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:21.274210) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_instructor_course_with_invalid_id_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:11.026849) while time zone support is active.
+test_register_instructor_course_with_invalid_id_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:22.221419) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_instructor_course_with_student_id_422 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:11.983914) while time zone support is active.
+test_register_instructor_course_with_student_id_422 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:23.182192) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_instructor_course_with_wrong_field_400 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:12.925962) while time zone support is active.
+test_register_instructor_course_with_wrong_field_400 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:24.175484) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_instructor_course_wrong_courseId_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:13.868717) while time zone support is active.
+test_register_instructor_course_wrong_courseId_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:25.132923) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_students_course_by_intructor_200 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:14.811201) while time zone support is active.
+test_register_students_course_by_intructor_200 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:26.099895) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_students_course_by_no_user_401 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:15.777540) while time zone support is active.
+test_register_students_course_by_no_user_401 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:27.115233) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_students_course_by_student_403 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:16.538398) while time zone support is active.
+test_register_students_course_by_student_403 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:27.882879) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_students_course_invalid_course_id_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:17.480793) while time zone support is active.
+test_register_students_course_invalid_course_id_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:28.833717) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_students_course_with_instructor_id_422 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:18.423599) while time zone support is active.
+test_register_students_course_with_instructor_id_422 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:29.782663) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_students_course_with_invalid_student_id_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:19.365634) while time zone support is active.
+test_register_students_course_with_invalid_student_id_404 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:30.735484) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_students_course_with_wrong_field_400 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:20.308594) while time zone support is active.
+test_register_students_course_with_wrong_field_400 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:31.691676) while time zone support is active.
   warnings.warn(
 ERROR
-test_register_students_course_with_wrong_field_type_400 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:21.253512) while time zone support is active.
+test_register_students_course_with_wrong_field_type_400 (test_api.TestCoursesRegister) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:32.636456) while time zone support is active.
   warnings.warn(
 ERROR
-test_update_course_by_instructor_200 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:21.831262) while time zone support is active.
+test_update_course_by_instructor_200 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:33.223389) while time zone support is active.
   warnings.warn(
 ok
-test_update_course_by_no_user_401 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:22.596821) while time zone support is active.
+test_update_course_by_no_user_401 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:33.993661) while time zone support is active.
   warnings.warn(
 ok
-test_update_course_by_student_403 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:23.178144) while time zone support is active.
+test_update_course_by_student_403 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:34.584854) while time zone support is active.
   warnings.warn(
 ok
-test_update_course_with_conflict_422 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:23.944945) while time zone support is active.
+test_update_course_with_conflict_422 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:35.361566) while time zone support is active.
   warnings.warn(
-/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:24.314713) while time zone support is active.
+/home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:35.732619) while time zone support is active.
   warnings.warn(
 ok
-test_update_invalid_course_404 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 04:52:24.714576) while time zone support is active.
+test_update_invalid_course_404 (test_api.TestCoursesUpdate) ... /home/keila/q4/entregas/parte2-django/e10-kanvas/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Course.created_at received a naive datetime (2022-03-21 11:14:36.166792) while time zone support is active.
   warnings.warn(
 ok
 
@@ -291,24 +291,8 @@ Traceback (most recent call last):
     raise ValueError(
 ValueError: Content-Type header is "text/html", not "application/json"
 
-======================================================================
-FAIL: test_address_creation_200 (test_api.TestAddress)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/test_api.py", line 1228, in test_address_creation_200
-    self.assertIn("house_number", output)
-AssertionError: 'house_number' not found in {'uuid': '9e07f695-12f6-401a-b1e8-465fd8789cc6', 'street': 'Rua das Orquídeas', 'city': 'Taubaté', 'state': 'SP', 'zip_code': '86990-000', 'country': 'Brasil', 'users': [{'uuid': '95349a94-0992-4b16-abad-b849c897ffbe', 'first_name': 'Student', 'last_name': 'Kenzie', 'email': 'student@kenzie.com.br', 'is_admin': False}]}
+Ran 45 tests in 32.292s
 
-======================================================================
-FAIL: test_address_creation_wrong_data_400 (test_api.TestAddress)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/keila/q4/entregas/parte2-django/e10-kanvas/test_api.py", line 1278, in test_address_creation_wrong_data_400
-    self.assertIn("house_number", output)
-AssertionError: 'house_number' not found in {'zip_code': ['This field is required.']}
-
-----------------------------------------------------------------------
-Ran 45 tests in 32.088s
-
-FAILED (failures=2, errors=15)
+FAILED (errors=15)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

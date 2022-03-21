@@ -27,6 +27,11 @@ class AddressView(APIView):
 
     if not serialized.is_valid():
       return Response(serialized.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    if 'house_number' not in request.data:
+      return Response(
+        {"house_number": ["This field is required."]}, status=status.HTTP_400_BAD_REQUEST
+      )
       
     zip_request = requests.get('https://viacep.com.br/ws/'+request.data['zip_code']+'/json/')
     zip_code_json = zip_request.json() 
